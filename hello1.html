@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <form action="/update" method='POST'>
+ <body>
+ <h1>Persons Need to be Approved</h1>
+ 	<h4>{% for row in row2 %}
+			{%for ele in row %}
+        	       {{ele}}
+			{%endfor %}
+	     {% endfor %}
+			 </h4>
+ </body>
+ </form>
+ <button type="submit" class="btn submit" style="margin-top:10px;background-color:hsl(240,100%,50%);color:white;"align="center">APPROVE</button>
+ </form>
+</html>
